@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login or Sign Up — Kafaat</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.svg" alt="Kafaat logo" class="brand-logo" width="40" height="40">
+      <span class="brand-name">Kafaat</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="find-work.html">Find Work</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html" class="active">Login</a>
+      <a href="login.html#signup" class="active">Sign Up</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="auth-wrap">
+  <div class="auth-card glossy card">
+    <span class="eyebrow">Welcome to Kafaat</span>
+
+    <div class="auth-tabs">
+      <button class="auth-tab active" id="tab-login">Log In</button>
+      <button class="auth-tab" id="tab-signup">Sign Up</button>
+    </div>
+
+    <!-- LOGIN PANEL -->
+    <div class="auth-panel active" id="panel-login">
+      <form id="login-form">
+        <div class="field">
+          <label>Email address</label>
+          <input type="email" placeholder="you@company.com">
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Log In</button>
+      </form>
+      <p class="auth-foot">New to Kafaat? <a href="#" data-switch-tab="signup">Create an account</a></p>
+    </div>
+
+    <!-- SIGN UP PANEL -->
+    <div class="auth-panel" id="panel-signup">
+      <form id="signup-form">
+        <div class="field">
+          <label>Full name</label>
+          <input type="text" placeholder="Your full name">
+        </div>
+        <div class="field">
+          <label>Email address</label>
+          <input type="email" placeholder="you@company.com">
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+      </form>
+      <p class="auth-foot">Already have an account? <a href="#" data-switch-tab="login">Log in</a></p>
+    </div>
+  </div>
+</div>
+
+<a class="wa-float" href="https://wa.me/201119887411" target="_blank" rel="noopener" aria-label="WhatsApp">☎</a>
+
+<script src="script.js"></script>
+</body>
+</html>
